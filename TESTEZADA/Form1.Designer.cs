@@ -50,6 +50,7 @@
             btnSen = new Button();
             btnCos = new Button();
             btnTan = new Button();
+            btnClear = new Button();
             SuspendLayout();
             // 
             // txtDisplay
@@ -58,167 +59,191 @@
             txtDisplay.Location = new Point(22, 12);
             txtDisplay.Name = "txtDisplay";
             txtDisplay.ReadOnly = true;
-            txtDisplay.Size = new Size(188, 43);
+            txtDisplay.Size = new Size(245, 43);
             txtDisplay.TabIndex = 0;
             txtDisplay.TextAlign = HorizontalAlignment.Right;
+            txtDisplay.TextChanged += txtDisplay_TextChanged;
             // 
             // btn7
             // 
+            btn7.BackColor = Color.DimGray;
             btn7.Location = new Point(22, 110);
             btn7.Name = "btn7";
             btn7.Size = new Size(44, 42);
             btn7.TabIndex = 1;
             btn7.Text = "7";
-            btn7.UseVisualStyleBackColor = true;
+            btn7.UseVisualStyleBackColor = false;
+            btn7.Click += btn7_Click;
             // 
             // btn8
             // 
+            btn8.BackColor = Color.DimGray;
             btn8.Location = new Point(70, 110);
             btn8.Name = "btn8";
             btn8.Size = new Size(44, 42);
             btn8.TabIndex = 2;
             btn8.Text = "8";
-            btn8.UseVisualStyleBackColor = true;
+            btn8.UseVisualStyleBackColor = false;
+            btn8.Click += btn8_Click;
             // 
             // btn9
             // 
+            btn9.BackColor = Color.DimGray;
             btn9.Location = new Point(118, 110);
             btn9.Name = "btn9";
             btn9.Size = new Size(44, 42);
             btn9.TabIndex = 3;
             btn9.Text = "9";
-            btn9.UseVisualStyleBackColor = true;
+            btn9.UseVisualStyleBackColor = false;
+            btn9.Click += btn9_Click;
             // 
             // btn6
             // 
-            btn6.Image = (Image)resources.GetObject("btn6.Image");
+            btn6.BackColor = Color.DimGray;
             btn6.ImageAlign = ContentAlignment.MiddleRight;
             btn6.Location = new Point(118, 159);
             btn6.Name = "btn6";
             btn6.Size = new Size(44, 42);
             btn6.TabIndex = 4;
             btn6.Text = "6";
-            btn6.UseVisualStyleBackColor = true;
+            btn6.UseVisualStyleBackColor = false;
+            btn6.Click += btn6_Click;
             // 
             // btn5
             // 
-            btn5.Image = (Image)resources.GetObject("btn5.Image");
+            btn5.BackColor = Color.DimGray;
             btn5.Location = new Point(70, 159);
             btn5.Name = "btn5";
             btn5.Size = new Size(44, 42);
             btn5.TabIndex = 5;
             btn5.Text = "5";
-            btn5.UseVisualStyleBackColor = true;
+            btn5.UseVisualStyleBackColor = false;
+            btn5.Click += button5_Click;
             // 
             // btn4
             // 
-            btn4.Image = (Image)resources.GetObject("btn4.Image");
+            btn4.BackColor = Color.DimGray;
             btn4.Location = new Point(22, 159);
             btn4.Name = "btn4";
             btn4.Size = new Size(44, 42);
             btn4.TabIndex = 6;
             btn4.Text = "4";
-            btn4.UseVisualStyleBackColor = true;
+            btn4.UseVisualStyleBackColor = false;
             btn4.Click += button6_Click;
             // 
             // btn1
             // 
-            btn1.Image = (Image)resources.GetObject("btn1.Image");
+            btn1.BackColor = Color.DimGray;
             btn1.Location = new Point(22, 208);
             btn1.Name = "btn1";
             btn1.Size = new Size(44, 42);
             btn1.TabIndex = 7;
             btn1.Text = "1";
-            btn1.UseVisualStyleBackColor = true;
+            btn1.UseVisualStyleBackColor = false;
             btn1.Click += button7_Click;
             // 
             // btn2
             // 
-            btn2.Image = (Image)resources.GetObject("btn2.Image");
+            btn2.BackColor = Color.DimGray;
             btn2.Location = new Point(70, 208);
             btn2.Name = "btn2";
             btn2.Size = new Size(44, 42);
             btn2.TabIndex = 8;
             btn2.Text = "2";
-            btn2.UseVisualStyleBackColor = true;
+            btn2.UseVisualStyleBackColor = false;
+            btn2.Click += btn2_Click;
             // 
             // btn3
             // 
-            btn3.Image = (Image)resources.GetObject("btn3.Image");
+            btn3.BackColor = Color.DimGray;
             btn3.Location = new Point(120, 208);
             btn3.Name = "btn3";
             btn3.Size = new Size(44, 42);
             btn3.TabIndex = 9;
             btn3.Text = "3";
-            btn3.UseVisualStyleBackColor = true;
+            btn3.UseVisualStyleBackColor = false;
+            btn3.Click += button3_Click;
             // 
             // btn0
             // 
+            btn0.BackColor = Color.DimGray;
             btn0.Location = new Point(22, 257);
             btn0.Name = "btn0";
             btn0.Size = new Size(44, 42);
             btn0.TabIndex = 10;
             btn0.Text = "0";
-            btn0.UseVisualStyleBackColor = true;
+            btn0.UseVisualStyleBackColor = false;
+            btn0.Click += btn0_Click;
             // 
             // btnMult
             // 
+            btnMult.BackColor = Color.DimGray;
             btnMult.Location = new Point(166, 61);
             btnMult.Name = "btnMult";
             btnMult.Size = new Size(44, 42);
             btnMult.TabIndex = 11;
             btnMult.Text = "*";
-            btnMult.UseVisualStyleBackColor = true;
+            btnMult.UseVisualStyleBackColor = false;
             btnMult.Click += button1_Click;
             // 
             // btnSub
             // 
+            btnSub.BackColor = Color.DimGray;
             btnSub.Location = new Point(166, 110);
             btnSub.Name = "btnSub";
             btnSub.Size = new Size(44, 42);
             btnSub.TabIndex = 12;
             btnSub.Text = "-";
-            btnSub.UseVisualStyleBackColor = true;
+            btnSub.UseVisualStyleBackColor = false;
+            btnSub.Click += btnSub_Click;
             // 
             // btnSoma
             // 
+            btnSoma.BackColor = Color.DimGray;
             btnSoma.Location = new Point(168, 159);
             btnSoma.Name = "btnSoma";
             btnSoma.Size = new Size(44, 42);
             btnSoma.TabIndex = 13;
             btnSoma.Text = "+";
-            btnSoma.UseVisualStyleBackColor = true;
+            btnSoma.UseVisualStyleBackColor = false;
+            btnSoma.Click += btnSoma_Click;
             // 
             // btnIgual
             // 
+            btnIgual.BackColor = Color.DimGray;
             btnIgual.Location = new Point(170, 207);
             btnIgual.Name = "btnIgual";
-            btnIgual.Size = new Size(44, 42);
+            btnIgual.Size = new Size(40, 43);
             btnIgual.TabIndex = 14;
             btnIgual.Text = "=";
-            btnIgual.UseVisualStyleBackColor = true;
+            btnIgual.UseVisualStyleBackColor = false;
+            btnIgual.Click += btnIgual_Click;
             // 
             // btnDiv
             // 
+            btnDiv.BackColor = Color.DimGray;
             btnDiv.Location = new Point(118, 61);
             btnDiv.Name = "btnDiv";
             btnDiv.Size = new Size(44, 42);
             btnDiv.TabIndex = 15;
             btnDiv.Text = "/";
-            btnDiv.UseVisualStyleBackColor = true;
+            btnDiv.UseVisualStyleBackColor = false;
+            btnDiv.Click += btnDiv_Click;
             // 
             // btnFat
             // 
+            btnFat.BackColor = Color.DimGray;
             btnFat.Location = new Point(70, 61);
             btnFat.Name = "btnFat";
             btnFat.Size = new Size(44, 42);
             btnFat.TabIndex = 16;
             btnFat.Text = "!";
-            btnFat.UseVisualStyleBackColor = true;
+            btnFat.UseVisualStyleBackColor = false;
+            btnFat.Click += btnFat_Click;
             // 
             // btnBin
             // 
-            btnBin.BackColor = Color.Transparent;
+            btnBin.BackColor = Color.Gray;
             btnBin.Cursor = Cursors.SizeAll;
             btnBin.Location = new Point(22, 61);
             btnBin.Name = "btnBin";
@@ -226,33 +251,51 @@
             btnBin.TabIndex = 17;
             btnBin.Text = "BIN";
             btnBin.UseVisualStyleBackColor = false;
+            btnBin.Click += btnBin_Click;
             // 
             // btnSen
             // 
-            btnSen.Location = new Point(70, 257);
+            btnSen.BackColor = Color.DimGray;
+            btnSen.Location = new Point(72, 257);
             btnSen.Name = "btnSen";
             btnSen.Size = new Size(44, 42);
             btnSen.TabIndex = 18;
             btnSen.Text = "SEN";
-            btnSen.UseVisualStyleBackColor = true;
+            btnSen.UseVisualStyleBackColor = false;
+            btnSen.Click += btnSen_Click;
             // 
             // btnCos
             // 
-            btnCos.Location = new Point(120, 257);
+            btnCos.BackColor = Color.DimGray;
+            btnCos.Location = new Point(118, 257);
             btnCos.Name = "btnCos";
             btnCos.Size = new Size(44, 42);
             btnCos.TabIndex = 19;
             btnCos.Text = "COS";
-            btnCos.UseVisualStyleBackColor = true;
+            btnCos.UseVisualStyleBackColor = false;
+            btnCos.Click += btnCos_Click;
             // 
             // btnTan
             // 
-            btnTan.Location = new Point(170, 257);
+            btnTan.BackColor = Color.DimGray;
+            btnTan.Location = new Point(168, 256);
             btnTan.Name = "btnTan";
             btnTan.Size = new Size(44, 42);
             btnTan.TabIndex = 20;
             btnTan.Text = "TAN";
-            btnTan.UseVisualStyleBackColor = true;
+            btnTan.UseVisualStyleBackColor = false;
+            btnTan.Click += btnTan_Click;
+            // 
+            // btnClear
+            // 
+            btnClear.BackColor = Color.DimGray;
+            btnClear.Location = new Point(216, 61);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(44, 42);
+            btnClear.TabIndex = 21;
+            btnClear.Text = "C";
+            btnClear.UseVisualStyleBackColor = false;
+            btnClear.Click += btnClear_Click;
             // 
             // Form1
             // 
@@ -260,7 +303,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Center;
-            ClientSize = new Size(233, 327);
+            ClientSize = new Size(279, 322);
+            Controls.Add(btnClear);
             Controls.Add(btnTan);
             Controls.Add(btnCos);
             Controls.Add(btnSen);
@@ -313,5 +357,6 @@
         private Button btnSen;
         private Button btnCos;
         private Button btnTan;
+        private Button btnClear;
     }
 }
